@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <style>
+    body {
+        background-color: #f0e8e0;
+        font-family: 'Poppins','sans-serif';
+        margin: 30px 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container {
+        background-color: #e8d6cc;
+        width: 80%;
+        max-width: 900px;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    h1 {
+        font-weight: bold;
+        font-size: 24px;
+        color: #222;
+    }
+    
+    hr {
+        margin: 20px 0;
+        border: none;
+        border-top: 1px solid white;
+    }
+    
+    .descricao {
+        font-size: 20px;
+        color: #b07b68;
+        margin-bottom: 40px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+    }
+    
+    .produto {
+        display: flex;
+        justify-content: center;
+        align-items: rigth;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    
+    .bolo-img {
+        width: 250px;
+        border-radius: 8px;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .estrelas {
+        color: #e67242;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .preco {
+        font-size: 20px;
+        font-weight: 300px;
+        margin-bottom: 25px;
+    }
+    
+    .compra-container {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .quantidade, .comprar {
+        background-color: #ee7f52 ;
+        color: black;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+         }
+    
+    .quantidade:hover, .comprar:hover {
+        background-color: #ee7f52;
+        }
+    
+    .rodape {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 40px;
+    }
+    
+    .voltar {
+        background-color: #7f5151;
+        color: #fff;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 30px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .voltar:hover {
+        background-color: #7f5151;
+    }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conheça mais do nosso produto</h1>
+        <hr>
+        <p class="descricao">
+            Nosso bolo de morango com baunilha é feito com massa fofinha, recheio cremoso de baunilha artesanal e morangos fresquinhos, colhidos no ponto certo para realçar o sabor.
+        </p>
+        
+        <div class="produto">
+            <img src="https://images.unsplash.com/photo-1679654594494-adfeaef21225?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=mona-bernhardsen-hMeH4P-tgDs-unsplash.jpg" alt="Bolo de Morango" class="bolo-img">
+            <div class="info">
+                <div class="estrelas">☆ ☆ ☆ ☆ ☆</div>
+                <div class="preco">R$ 159,99</div>
+                <div class="compra-container">
+                    <button class="quantidade">+ 1 -</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <button class="voltar">Voltar</button>
+        </div>
+    </div>
+</body>
+</html>
