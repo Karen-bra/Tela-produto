@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão de Produtos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fcf3ec;
+      margin: 0;
+      padding: 40px;
+      display: flexbox;
+    }
+    h1 {
+      color: #e65c2c;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #d8cfc7;
+    }
+
+    .tabs a {
+      text-decoration: none;
+      padding-bottom: 10px;
+      color: #a37661;
+    }
+
+    .tabs a.active {
+      font-weight: bold;
+      color: #e65c2c;
+      border-bottom: 1px solid #e65c2c;
+    }
+
+    .produtos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .produto-card {
+      background-color: #fce6da;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .produto-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .produto-card h4 {
+      margin: 5px 0;
+      font-size: 15px;
+      color: #3e3e3e;
+    }
+
+    .produto-card .preco {
+      color: black;
+      font-size: 14px;
+      margin-bottom: 10px;
+      font-family:'sans-serif';
+    }
+
+    .editar-btn {
+      background-color: #f9c4b4;
+      color: #a04327;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .produto-add {
+      border: 2px dashed #f5a694;
+      background-color: #fce6da;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 10px;
+      font-size: 14px;
+      color: #f0835d;
+      border-radius: 12px;
+    }
+
+    .produto-add span {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .acoes {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      margin-top: 40px;
+    }
+
+    .acoes button {
+      padding: 10px 18px;
+      font-size: 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      border: none;
+    }
+
+    .acoes .descartar {
+      background: none;
+      color: #ee7f52;
+      border: 1px solid #f3bba9;
+    }
+
+    .acoes .salvar {
+      background: linear-gradient(to right, #ee7f52, #e06545);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  
+<h1>Gestão de Produtos</h1>
+  <div class="tabs">
+    <a href="#" class="active">Gestão de produtos</a>
+    <a href="#">Dashboard</a>
+
+  </div>
+
+  <div class="produtos-grid">
+    <div class="produto-add">
+      <span>+</span>
+      Adicionar novo produto
+    </div>
+
+    <div class="produto-card">
+      <img src="https://images.unsplash.com/photo-1587246127502-b304d6b5a4a6?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=kateryna-hliznitsova-vAaU6-VqEME-unsplash.jpg&w=640.jpg"
+      alt="Bolo de Pêssego">
+      <h4>Bolo de Pêssego</h4>
+      <div class="preco">R$ 149,99</div>
+      <button class="editar-btn">Editar</button>
+    </div>
+
+    <div class="produto-card">
+      <img src= "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=alex-lvrs-aX_ljOOyWJY-unsplash.jpg"
+      alt="Torta de Limão">
+      <h4>Torta de Limão</h4>
+      <div class="preco">R$ 49,99</div>
+      <button class="editar-btn">Editar</button>
+    </div>
+
+    <div class="produto-card">
+      <img src= "https://images.unsplash.com/photo-1702728052103-69473aa7ed77?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=felippe-lopes-X63R-LkvoHE-unsplash.jpg"
+      alt="Pudim">
+      <h4>Pudim</h4>
+      <div class="preco">R$ 49,99</div>
+      <button class="editar-btn">Editar</button>
+    </div>
+
+    <div class="produto-card">
+      <img src="https://images.unsplash.com/photo-1702728052103-69473aa7ed77?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=felippe-lopes-X63R-LkvoHE-unsplash.jpg" 
+      alt="Pudim">
+      <h4>Pudim</h4>
+      <div class="preco">R$ 49,99</div>
+      <button class="editar-btn">Editar</button>
+    </div>
+
+    <div class="produto-card">
+      <img src="https://images.unsplash.com/photo-1702728052103-69473aa7ed77?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=felippe-lopes-X63R-LkvoHE-unsplash.jpg" alt="Pudim">
+      <h4>Pudim</h4>
+      <div class="preco">R$ 49,99</div>
+      <button class="editar-btn">Editar</button>
+    </div>
+  </div>
+
+  <div class="acoes">
+    <button class="descartar">Descartar Alterações</button>
+    <button class="salvar">Salvar Alterações</button>
+  </div>
+</body>
+</html>
